@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Frontend AkaSoft
 
-## Getting Started
+## Resolução do Teste
 
-First, run the development server:
+Inicialmente dei uma estudada na documentação das tecnologias usadas (Nextjs e Mantine) no desafio. Decidi por utilizar o Mantine por ser a biblioteca sugerida pela empresa.
+
+No primeiro dia, foquei principalmente em criar e entender os funcionamentos do Next, criei o projeto baseado no getting started da documentação do Next e instalei as dependências do Mantine.
+
+No segundo dia, gastei boa parte do tempo fazendo o header e tentando ajustar corretamente os alinhamentos e distanciamentos, porém, inicialmente tinha colocado ele diretamente na página principal no qual seria um problema para a escalabilidade, pois, caso fossem adicionadas outras páginas existiria repetição de código. Após perceber isso, coloquei ele diretamente no layout e iniciei a criação da página principal. Posteriomente, pesquisei melhor e percebi que o ideal seria que o header(Navbar) deveria ser um componente e voltei minha atenção a ele.
+
+No terceiro dia, finalizei a página principal e percebi que estavam acontecendo alguns bugs na responsividade e no background e voltei minha atenção a isso, após corrigido, resolvi colocar uma pequena animação fadeIn na imagem dos cartões e ajustei a responsividade da página principal e do header. Após finalizado, resolvi criar mais duas páginas ilustrativas apenas para entender melhor como funcionam as rotas no Next e fiz o deploy no vercel.
+
+## Deploy no Vercel
+
+Você pode acessar meu deploy do app Next.js no [link](https://aka-job-frontend-developer-taupe.vercel.app/).
+
+## Rodando o Projeto
+
+É necessário ter o Node instalado na sua máquina.
+
+Primeiramente, faça o clone ou download do [repositório](https://github.com/MatheusSettee/aka-job-frontend-developer). 
+
+Após efetuado o primeiro passo, abra seu terminal ou editor de texto e rode os seguintes comandos:
 
 ```bash
+npm install
+# depois 
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
