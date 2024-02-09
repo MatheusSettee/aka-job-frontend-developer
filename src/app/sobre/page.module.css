@@ -1,0 +1,15 @@
+.title {
+  color: white;
+  padding-top: 50px;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text {
+  color: white;
+  padding-top: 40px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
