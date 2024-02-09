@@ -29,5 +29,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  max-width: 80%;
+  
+}
+
+@media screen and (max-width: 1000px){
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
 }

@@ -5,7 +5,7 @@ import styles from "./header.module.css";
 
 export const Header = () => {
   return (
-    <SimpleGrid className={styles.header} cols={3} spacing="md">
+    <SimpleGrid className={styles.header} cols={{base:1, md:3, sm:1}} spacing="md">
       <Box>
         <Link href="/">
           <Image
@@ -17,7 +17,7 @@ export const Header = () => {
           />
         </Link>
       </Box>
-      <Group className={styles.header} gap={120}>
+      <SimpleGrid className={styles.header} cols={{base:1, md:3, sm:1}}>
         <Link className={styles.linkCabecalho} href="/sobre">
           Sobre
         </Link>
@@ -27,12 +27,12 @@ export const Header = () => {
         <Link className={styles.linkCabecalho} href="/produto">
           Produto
         </Link>
-      </Group>
-      <aside className={styles.buttonContainer}>
+      </SimpleGrid>
+      <Box className={styles.buttonContainer}>
         <Button className={styles.button} variant="outline" size="md">
           Entre
         </Button>
-      </aside>
+      </Box>
     </SimpleGrid>
   );
 };
