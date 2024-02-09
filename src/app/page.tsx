@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Box>
       <Grid className={styles.grid}>
-        <Grid.Col span={6}>
+        <Grid.Col span={{base: 12, lg: 6, md: 6, sm: 12}}>
           <Paper className={styles.paper} p="xl">
             <Text className={styles.textcomeco}>
               COMECE DIMINUINDO SUA INADIMPLÊNCIA
@@ -35,7 +35,7 @@ export default function Home() {
             </Text>
           </Paper>
         </Grid.Col>
-        <Grid.Col className={styles.imgContainer} span={6}>
+        <Grid.Col className={styles.imgContainer} span={{base: 12, lg: 6, md: 6, sm: 12}}>
           <Image className={styles.fadeIn} src="/img/cards.png" alt="cards" width={617} height={700} />
         </Grid.Col>
       </Grid>
